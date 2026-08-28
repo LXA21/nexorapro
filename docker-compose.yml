@@ -9,7 +9,7 @@ services:
       - "${PUERTO_WEB:-8080}:80"
     environment:
       DB_HOST: db
-      DB_DATABASE: ${DB_DATABASE:-comanda-php}
+      DB_DATABASE: ${DB_DATABASE:-nexora_php}
       DB_USERNAME: ${DB_USERNAME:-}
       DB_PASSWORD: ${DB_PASSWORD:-}
     depends_on:
@@ -26,7 +26,7 @@ services:
     container_name: ${PREFIX_CONTENEDOR}_db
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_DATABASE: ${DB_DATABASE:-comanda-php}
+      MYSQL_DATABASE: ${DB_DATABASE:-nexora_php}
       MYSQL_USER: ${DB_USERNAME:-}
       MYSQL_PASSWORD: ${DB_PASSWORD:-}
     ports:
